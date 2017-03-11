@@ -460,8 +460,7 @@ function genFragment(
   while (child) {
     if (
       child instanceof HTMLAnchorElement &&
-      child.href &&
-      hasValidLinkText(child)
+      child.href
     ) {
       const anchor: HTMLAnchorElement = child;
       const entityConfig = {};
