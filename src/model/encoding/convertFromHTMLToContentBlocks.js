@@ -472,7 +472,7 @@ function genFragment(
         }
       });
 
-      entityConfig.url = new URI(anchor.href).toString();
+      entityConfig.url = new URI(anchor.getAttribute && anchor.getAttribute('href')).toString();
       // TODO: update this when we remove DraftEntity completely
       entityId = DraftEntity.__create(
         'LINK',
